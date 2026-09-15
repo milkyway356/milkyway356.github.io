@@ -1,13 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-
-scale=1.0">
-<title>Welcome to My GitHub Pages</title>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cyber Domain</title>
+    <style>
+        /* --- CLASSIC 90s AESTHETIC --- */
+        body {
+            /* Pure black background with a CSS starry pattern */
+            background-color: #000;
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 3px),
+                radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 4px),
+                radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 3px);
+            background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+            background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+            color: #c0c0c0;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+        /* The main "Table" container */
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #000;
+            border: 6px ridge #808080;
+        }
+
+        /* Header section */
+        header {
+            text-align: center;
+            border-bottom: 6px ridge #808080;
+            padding: 10px;
+            background-color: #000080; /* Navy Blue */
+        }
+
+        h1 {
+            font-family: "Times New Roman", Times, serif;
+            color: #ffff00; /* Yellow */
+            text-shadow: 2px 2px #ff0000; /* Red shadow */
+            margin: 5px 0;
+            font-size: 2.5em;
+        }
+
+        marquee {
+            color: #00ff00; /* Lime Green */
+            font-weight: bold;
+            font-family: "Courier New", Courier, monospace;
+            background: #000;
+            padding: 2px;
+        }
+
+        /* Split Layout using modern flex, but styled to look old */
+        .content-area {
+            display: flex;
+        }
+
+        /* Sidebar for navigation and badges */
+        .sidebar {
+            width: 200px;
+            border-right: 6px ridge #808080;
+            padding: 15px;
+            background-color: #111;
+        }
+
+        .sidebar h3 {
+            color: #ff00ff; /* Magenta */
+            border-bottom: 1px dashed #ff00ff;
+            margin-top: 0;
+        }
+
+        .sidebar ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .sidebar a {
+            color: #00ffff; /* Cyan */
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .badges {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        /* Placeholder for 88x31 buttons */
+        .badge-placeholder {
+            display: inline-block;
+            width: 88px;
+            height: 31px;
+            border: 1px solid #fff;
+            color: #fff;
+            font-size: 10px;
+            line-height: 31px;
+            margin-bottom: 5px;
+            background: #333;
+        }
+
+        /* Main Blog Area */
+        .main-blog {
+            flex-grow: 1;
+            padding: 20px;
+            line-height: 1.4;
+        }
+
+        .blog-post {
+            margin-bottom: 30px;
+        }
+
+        .blog-date {
+            color: #00ff00;
+            font-family: "Courier New", Courier, monospace;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .blog-post h2 {
+            margin: 0 0 10px 0;
+            color: #fff;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Classic 3D Horizontal Rule */
+        hr {
+            border: 0;
+            height: 4px;
+            background: #808080;
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #333;
+            margin: 20px 0;
+        }
+
+        /* Recreating the <blink> tag using modern CSS */
+        .blink {
+            animation: blinker 1s linear infinite;
+            color: #ff0000;
+            font-weight: bold;
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            border-top: 6px ridge #808080;
+            padding: 10px;
+            font-size: 0.8em;
+            background-color: #000080;
+            color: #fff;
+        }
+
+        /* Mobile responsiveness (The 90s didn't have this, but we need it!) */
+        @media (max-width: 600px) {
+            .content-area { flex-direction: column; }
+            .sidebar { width: auto; border-right: none; border-bottom: 6px ridge #808080; }
+        }
+    </style>
 </head>
 <body>
-<h1>Hello, World!</h1>
-<p>This is my first GitHub Pages website.</p>
-</body>
-</
+
+    <div class="wrapper">
+        <header>
+            <h1>My Personal Cyber-Journal</h1>
+            <marquee scrollamount="5">&gt;&gt;&gt; WELCOME TO MY HOMEPAGE. BEST VIEWED IN NETSCAPE NAVIGATOR 4.0 &lt;&lt;&lt;</marquee>
+        </header>
+
+        <div class="content-area">
+            
+            <aside class="sidebar">
+                <h3>[ Navigation ]</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">My Pets</a></li>
+                    <li><a href="#">Links/Webrings</a></li>
+                    <li><a href="#">Guestbook</a></li>
+                </ul>
+
+                <div class="badges">
+                    <span class="blink">NEW UPDATES!</span><br><br>
+                    <div class="badge-placeholder">ANY BROWSER</div>
+                    <div class="badge-placeholder">HTML 4.0</div>
+                    <div class="badge-placeholder">NO FRAMES</div>
+                </div>
+            </aside>
+
+            <main class="main-blog">
+                <div class="blog-post">
+                    <span class="blog-date">Monday, October 24th</span>
+                    <h2>Setting up my new site!</h2>
+                    <p>Hello web surfers! I finally figured out how to use HTML to build my own website. It took a lot of trial and error, but I think the ridge borders look super cool.</p>
+                    <p>I'm going to use this space to post about my hobbies, share cool MIDIs I find on the net, and link to my friends' pages. Don't forget to sign the guestbook before you leave!</p>
+                </div>
+
+                <hr>
+
+                <div class="blog-post">
+                    <span class="blog-date">Sunday, October 23rd</span>
+                    <h2>Under Construction...</h2>
+                    <p>Pardon our dust! The site is currently <span class="blink">UNDER CONSTRUCTION</span>. Check back soon for more updates, cool GIFs, and my collection of pixel art.</p>
+                </div>
+            </main>
+
+        </div>
+
+        <footer>
+            <a href="https://sweetembed.neocities.org/" target="_blank" style="display: inline-flex; width: 88px; height: 31px; text-decoration: none; border: 1px solid rgb(255, 0, 255); box-sizing: border-box; background: rgb(0, 0, 0); box-shadow: rgb(0, 255, 255) 2px 2px 0px; overflow: hidden; transition: transform 0.1s; transform: translateY(0px);" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'" title="Get themes at sweetEMBED!">
+    <span style="background: #00ffff; height: 100%; width: 22px; display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0;">
+        ✨
+    </span>
+    <span style="display: flex; flex-direction: column; justify-content: center; padding-left: 4px; font-family: 'Courier New', Courier, monospace; font-size: 8px; font-weight: bold; line-height: 1.1;">
+        <span style="color: #ff00ff;">sweetEMBED</span>
+        <span style="color: #00ffff;">TEMPLATES</span>
+    </span>
+</a>
+        </footer>
+    </div>
+
+
+<img id="sweetembed-tracking-pixel" src="https://sweetembed.neocities.org/se_spacer.png" alt="" width="1" height="1" style="position: absolute; visibility: hidden;"></body></html>
